@@ -1,0 +1,161 @@
+@counter-style bengali-num {
+	system: numeric;
+	symbols: '০' '১' '২' '৩' '৪' '৫' '৬' '৭' '৮' '৯';
+}
+
+/* Style the ordered list */
+.counter-num {
+	counter-reset: bengali-num-1; /* Initialize the counter */
+	list-style-type: none; /* Remove default list markers */
+	padding-left: 2rem; /* Space for custom markers */
+}
+
+.counter-num > li {
+	margin-bottom: 10px; /* Spacing between items */
+	counter-increment: bengali-num-1;
+}
+
+.counter-num li::before {
+	content: '(' counter(bengali-num-1, bengali-num) ') '; /* Wrap counter in parentheses */
+	display: inline-block;
+	width: 2.5em;
+	/* Adjusted for better alignment */
+	/* position: relative;
+	left: -10px; */
+	margin-left: -2.5em; /* Align with list content */
+	font-family: 'tiro bangla', sans-serif; /* Ensure Bengali font for markers */
+}
+
+@counter-style bengali-alpha {
+	system: alphabetic;
+	symbols: 'অ' 'আ' 'ই' 'ঈ' 'উ' 'ঊ' 'ঋ' 'এ' 'ঐ' 'ও' 'ঔ' 'ক' 'খ' 'গ' 'ঘ' 'ঙ' 'চ'
+		'ছ' 'জ' 'ঝ' 'ঞ' 'ট' 'ঠ' 'ড' 'ঢ' 'ণ' 'ত' 'থ' 'দ' 'ধ' 'ন' 'প' 'ফ' 'ব' 'ভ'
+		'ম' 'য' 'র' 'ল' 'শ' 'ষ' 'স' 'হ';
+}
+
+.counter-alpha {
+	counter-reset: bengali-alpha-11 11;
+	list-style-type: none;
+	padding-left: 2rem;
+}
+
+.counter-alpha > li {
+	margin-bottom: 10px; /* Spacing between items */
+	counter-increment: bengali-alpha-11;
+}
+
+.counter-alpha li::before {
+	content: '(' counter(bengali-alpha-11, bengali-alpha) ') '; /* Wrap counter in parentheses */
+	display: inline-block;
+	width: 2em; /* Adjusted for better alignment */
+	margin-left: -2em; /* Align with list content */
+	font-family: 'tiro bangla', sans-serif; /* Ensure Bengali font for markers */
+}
+
+.counter-alpha-start-1 {
+	counter-reset: bengali-alpha-1;
+	list-style-type: none;
+	padding-left: 2rem;
+}
+
+.counter-alpha-start-1 > li {
+	margin-bottom: 10px; /* Spacing between items */
+	counter-increment: bengali-alpha-1;
+}
+
+.counter-alpha-start-1 li::before {
+	content: '(' counter(bengali-alpha-1, bengali-alpha) ') '; /* Wrap counter in parentheses */
+	display: inline-block;
+	width: 2em; /* Adjusted for better alignment */
+	margin-left: -2em; /* Align with list content */
+	font-family: 'tiro bangla', sans-serif; /* Ensure Bengali font for markers */
+}
+
+@counter-style bengali-num-level-4 {
+	system: numeric;
+	symbols: '০' '১' '২' '৩' '৪' '৫' '৬' '৭' '৮' '৯';
+}
+
+/* Style the ordered list */
+.counter-num-level-4 {
+	counter-reset: bengali-num-le; /* Initialize the counter */
+	list-style-type: none; /* Remove default list markers */
+	padding-left: 2rem; /* Space for custom markers */
+}
+
+.counter-num-level-4 > li {
+	margin-bottom: 10px; /* Spacing between items */
+	counter-increment: bengali-num-level-4;
+}
+
+.counter-num-level-4 li::before {
+	content: '(' counter(bengali-num-level-4, bengali-num-level-4) ') '; /* Wrap counter in parentheses */
+	display: inline-block;
+	width: 2.5em;
+	/* Adjusted for better alignment */
+	/* position: relative;
+	left: -10px; */
+	margin-left: -2.5em; /* Align with list content */
+	font-family: 'tiro bangla', sans-serif; /* Ensure Bengali font for markers */
+}
+
+@counter-style bengali-alpha-level-4 {
+	system: alphabetic;
+	symbols: 'অ' 'আ' 'ই' 'ঈ' 'উ' 'ঊ' 'ঋ' 'এ' 'ঐ' 'ও' 'ঔ' 'ক' 'খ' 'গ' 'ঘ' 'ঙ' 'চ'
+		'ছ' 'জ' 'ঝ' 'ঞ' 'ট' 'ঠ' 'ড' 'ঢ' 'ণ' 'ত' 'থ' 'দ' 'ধ' 'ন' 'প' 'ফ' 'ব' 'ভ'
+		'ম' 'য' 'র' 'ল' 'শ' 'ষ' 'স' 'হ';
+}
+
+.counter-alpha-level-4 {
+	counter-reset: bengali-alpha-level-4 11;
+	list-style-type: none;
+	padding-left: 2rem;
+}
+
+.counter-alpha-level-4 > li {
+	margin-bottom: 10px; /* Spacing between items */
+	counter-increment: bengali-alpha-level-4;
+}
+
+.counter-alpha-level-4 li::before {
+	content: '(' counter(bengali-alpha-level-4, bengali-alpha-level-4) ') '; /* Wrap counter in parentheses */
+	display: inline-block;
+	width: 2em; /* Adjusted for better alignment */
+	margin-left: -2em; /* Align with list content */
+	font-family: 'tiro bangla', sans-serif; /* Ensure Bengali font for markers */
+}
+
+
+.counter-alpha-level-4-start-1 {
+	counter-reset: bengali-alpha-level-4-start-1;
+	list-style-type: none;
+	padding-left: 2rem;
+}
+
+.counter-alpha-level-4-start-1 > li {
+	margin-bottom: 10px; /* Spacing between items */
+	counter-increment: bengali-alpha-level-4-start-1;
+}
+
+.counter-alpha-level-4-start-1 li::before {
+	content: '(' counter(bengali-alpha-level-4-start-1, bengali-alpha-level-4) ') '; /* Wrap counter in parentheses */
+	display: inline-block;
+	width: 2em; /* Adjusted for better alignment */
+	margin-left: -2em; /* Align with list content */
+	font-family: 'tiro bangla', sans-serif; /* Ensure Bengali font for markers */
+}
+
+@media (max-width:800px){
+	.counter-num li:before,.counter-num-level-4 li:before{
+		width:2em;
+		margin-left:-1.7em;
+	}
+	.counter-num-level-4,.counter-alpha-start-1,.counter-alpha-level-4-start-1,.counter-alpha-level-4{
+		padding-left:1rem;
+	}
+
+	.counter-alpha li:before,.counter-alpha-level-4 li:before,.counter-alpha-start-1 li:before,.counter-alpha-level-4-start-1 li:before{
+		width:1.7em;
+		margin-left:-1.7em;
+	}
+}
