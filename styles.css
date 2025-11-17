@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap');
+
 *,
 *::before,
 *::after {
@@ -31,7 +33,9 @@ a {
 }
 
 main a{
-text-decoration: underline lightcoral 2px solid;
+text-decoration-line: underline;
+	text-decoration-color: lightcoral;
+	text-decoration-thickness: 2px;
 }
 
 main a:hover{
@@ -450,7 +454,7 @@ td[id]{
 		font-size: clamp(1.1rem, 1vw + 0.8rem, 1.4rem);
 	}
 	body{
-		font-size: clamp(0.9rem, 1vw + 0.6rem, 1.2rem);
+		font-size: 1rem;
 	}
 	
 	.table-chapter-6{
